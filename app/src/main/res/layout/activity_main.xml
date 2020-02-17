@@ -4,41 +4,37 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="?attr/custom_attr_app_bg">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:paddingTop="5dp"
-        android:paddingLeft="14dp"
+        android:paddingLeft="5dp"
         android:paddingRight="5dp">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_fun"
-            android:layout_width="8dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/function"
-            style="@style/Widget.AppCompat.Button"
-            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="?attr/custom_attr_app_bg"
+            android:src="@drawable/shezhi"
+            android:scaleType="fitCenter"
             />
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_centerHorizontal="true"/>
 
-        <Button
-            android:id="@+id/btn_exit"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginRight="5dp"
+
+        <ImageButton
+            android:id="@+id/btn_history"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_alignParentRight="true"
-            android:background="@drawable/exit"
-            style="@style/Widget.AppCompat.Button"
-            android:foreground="?android:attr/selectableItemBackground"
+            android:src="@drawable/history"
+            android:scaleType="fitCenter"
+            android:background="?attr/custom_attr_app_bg"
             />
-
 
 
 
@@ -47,7 +43,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9">
+        android:layout_weight="9"
+        android:orientation="vertical">
         <!--
         <view class="androidx.appcompat.app.AlertController$RecycleListView"
             android:id="@+id/recycler_view"
@@ -59,6 +56,38 @@
 
             android:scrollbars="vertical"/>
         -->
+        <EditText
+            android:id="@+id/tv_equation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textColor="#4D4D4D"
+            android:textSize="30sp"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:background="@null"
+            android:gravity="right|bottom"
+
+            android:letterSpacing="0.2"
+
+            />
+       <EditText
+           android:id="@+id/edit_text"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="3"
+           android:textColor="?attr/custom_attr_ch_bg"
+           android:singleLine="true"
+           android:textSize="40sp"
+           android:scrollbars="horizontal"
+           android:maxLines="1"
+           android:focusable="true"
+           android:gravity="right"
+           />
+
+
+        <!--
         <TextView
             android:id="@+id/text_view"
             android:layout_width="match_parent"
@@ -67,7 +96,12 @@
             app:autoSizeMaxTextSize="60sp"
             app:autoSizeMinTextSize="20sp"
             app:autoSizeStepGranularity="5sp"
-            app:autoSizeTextType="uniform" />
+            app:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:scrollbars="horizontal"
+            android:fadeScrollbars="false"
+            />
+        -->
 
     </LinearLayout>
     
@@ -89,16 +123,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_fen"
-                android:textSize="30sp"
+
+                android:textSize="28sp"
                 android:typeface="sans"/>
             <Button
                 android:id="@+id/btn_left"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/fun_zuo"
                 android:typeface="sans"/>
@@ -107,17 +144,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/num7"
+
                 android:typeface="sans"/>
             <Button
                 android:id="@+id/btn_4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num4"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -125,8 +166,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num1"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -134,8 +177,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_bai"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
         </LinearLayout>
@@ -151,8 +196,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_gen"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -160,8 +207,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_you"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -169,8 +218,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num8"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -178,8 +229,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num5"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -187,8 +240,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num2"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -196,8 +251,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num0"
+
                 android:typeface="sans"
                 android:textSize="30sp"
                 />
@@ -214,9 +271,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/fun_del"
+
                 android:typeface="sans"/>
 
             <Button
@@ -224,8 +283,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_chu"
+
                 android:textSize="30sp"
                 android:typeface="sans" />
             <Button
@@ -233,8 +294,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num9"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -242,8 +305,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/num6"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -251,17 +316,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_color_daytime"
+                android:background="?attr/custom_attr_num_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/num3"
+
                 android:typeface="sans"/>
             <Button
                 android:id="@+id/btn_point"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_dia"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
         </LinearLayout>
@@ -272,31 +341,36 @@
             android:layout_weight="1"
             android:orientation="vertical"
             >
-            <Button
+            <ImageButton
                 android:id="@+id/btn_del"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
-                android:text="@string/fun_sha"
-                android:textSize="30sp"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:src="@drawable/backspace"
+                android:scaleType="fitCenter"
+                android:padding="25dp"
                 android:typeface="sans"/>
             <Button
                 android:id="@+id/btn_multiply"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/fun_che"
+
                 android:typeface="sans"/>
             <Button
                 android:id="@+id/btn_subtract"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_jan"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -304,8 +378,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:text="@string/fun_jia"
+
                 android:textSize="30sp"
                 android:typeface="sans"/>
             <Button
@@ -313,9 +389,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:background="@drawable/btn_daytime_fun"
+                android:background="?attr/custom_attr_symbol_fun_bg"
+                android:textColor="?attr/custom_attr_ch_bg"
                 android:textSize="30sp"
                 android:text="@string/fun_den"
+
                 android:typeface="sans"/>
         </LinearLayout>
 

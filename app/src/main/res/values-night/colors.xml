@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#222020</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="daymainbackground">#222020</color>//白天主界面背景色
+    <color name="daytextcolor">#FFFFFF</color>//白天显示字体颜色
+    <color name="button_tumb">#FFFFFF</color>
+    <color name="button_track_on">#4AD662</color>
+    <color name="button_track_off">#DDDDDD</color>
+</resources>

@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
 
-</selector>
+    <!-- 高度40 -->
+    <size android:height="20dp"/>
+    <!-- 圆角弧度 20 -->
+    <corners android:radius="45dp"/>
+    <!-- 变化率 -->
+    <gradient
+        android:endColor="@color/button_track_on"
+        android:startColor="@color/button_track_on" />
+
+
+
+</shape>

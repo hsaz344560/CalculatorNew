@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#c9c9c9</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="daymainbackground">#FFFFFF</color>//白天主界面背景色
+    <color name="daytextcolor">#000000</color>//白天显示字体颜色
+    <color name="button_tumb">#FFFFFF</color>
+    <color name="button_track_on">#4AD662</color>
+    <color name="button_track_off">#DDDDDD</color>
+    <color name="history_result">#909CC2</color>
+
+    <!-- 日间模式下app背景色 -->
+    <color name="custom_attr_app_bg_day">#FFFFFF</color>
+    <!-- 日间模式下app字体色 -->
+    <color name="custom_attr_ch_bg_day">#000000</color>
+    <!-- 夜间模式下app背景色 -->
+    <color name="custom_color_app_bg_night">#222020</color>
+    <!-- 夜间模式下app字体色 -->
+    <color name="custom_attr_ch_bg_night">#FFFFFF</color>
+    <!-- 护眼模式下app背景色 -->
+    <color name="custom_color_app_bg_eye">#CCE8CF</color>
+    <!-- 护眼模式下app字体色 -->
+    <color name="custom_attr_ch_bg_eye">#000000</color>
+    <!-- 日间模式下app得数字体色 -->
+    <color name="custom_attr_result_ch_bg_day">#909CC2</color>
+    <!-- 日夜间模式下app得数字体色 -->
+    <color name="custom_attr_result_ch_bg_night">#FAC9B8</color>
+    <!-- 护眼模式下app得数字体色 -->
+    <color name="custom_attr_result_ch_bg_eye">#CC906E</color>
 </resources>

@@ -20,4 +20,6 @@
     <attr name="custom_attr_app_bg" format="color|reference" />
     <!-- 控制app字体色 format:颜色值、资源引用 -->
     <attr name="custom_attr_ch_bg" format="color|reference" />
+    <!-- 控制app得数字体色 format:颜色值、资源引用 -->
+    <attr name="custom_attr_result_ch_bg" format="color|reference" />
 </resources>

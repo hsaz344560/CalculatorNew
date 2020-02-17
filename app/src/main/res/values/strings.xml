@@ -13,10 +13,10 @@
     <string name="fun_chu">/</string>
     <string name="fun_che">×</string>
     <string name="fun_fen">1/x</string>
-    <string name="fun_zuo">（</string>
-    <string name="fun_you">）</string>
+    <string name="fun_zuo">(</string>
+    <string name="fun_you">)</string>
     <string name="fun_jia">+</string>
-    <string name="fun_jan">－</string>
+    <string name="fun_jan">-</string>
     <string name="fun_den">=</string>
     <string name="fun_gen">√</string>
     <string name="fun_del">C</string>
