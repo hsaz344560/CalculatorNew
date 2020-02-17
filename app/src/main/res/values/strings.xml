@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num0">0</string>
+    <string name="fun_chu">/</string>
+    <string name="fun_che">×</string>
+    <string name="fun_fen">1/x</string>
+    <string name="fun_zuo">（</string>
+    <string name="fun_you">）</string>
+    <string name="fun_jia">+</string>
+    <string name="fun_jan">－</string>
+    <string name="fun_den">=</string>
+    <string name="fun_gen">√</string>
+    <string name="fun_del">C</string>
+    <string name="fun_sha">CE</string>
+    <string name="fun_dia">.</string>
+    <string name="fun_bai">%</string>
+</resources>
